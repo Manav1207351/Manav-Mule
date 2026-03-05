@@ -68,6 +68,8 @@ function SectionHeading({ icon: Icon, title, subtitle }: { icon: React.ElementTy
 }
 
 /* ═══════════════════════════════════════════════════════════════════ */
+const BASE = process.env.NODE_ENV === "production" ? "/Manav-Mule" : "";
+
 export default function Portfolio() {
   /* ── Data ── */
   const projects = [
@@ -78,7 +80,7 @@ export default function Portfolio() {
       tech: ["YOLOv8", "OpenCV", "Flask", "React", "Socket.IO"],
       impact: "93% detection accuracy • 30% faster incident response",
       github: "https://github.com/Manav1207351",
-      image: "/projects/surveillance.svg",
+      image: `${BASE}/projects/surveillance.svg`,
       badge: "AI/ML",
     },
     {
@@ -88,7 +90,7 @@ export default function Portfolio() {
       tech: ["Python", "CNN", "OpenCV"],
       impact: "92% drowsiness detection • 95% sign recognition",
       github: "https://github.com/Manav1207351",
-      image: "/projects/carvis.svg",
+      image: `${BASE}/projects/carvis.svg`,
       badge: "AI/ML",
     },
     {
@@ -98,7 +100,7 @@ export default function Portfolio() {
       tech: ["Python", "Machine Learning", "Power BI"],
       impact: "15–25% budget optimization",
       github: "https://github.com/Manav1207351",
-      image: "/projects/finance.svg",
+      image: `${BASE}/projects/finance.svg`,
       badge: "Data Science",
     },
     {
@@ -108,7 +110,7 @@ export default function Portfolio() {
       tech: ["Python", "NLP", "LLaMA"],
       impact: "70% reduction in manual review",
       github: "https://github.com/Manav1207351",
-      image: "/projects/essay.svg",
+      image: `${BASE}/projects/essay.svg`,
       badge: "NLP",
     },
   ];
@@ -137,7 +139,7 @@ export default function Portfolio() {
       title: "Fundamentals of Deep Learning",
       issuer: "NVIDIA",
       date: "2025",
-      verifyLink: "/nvidia-deep-learning-cert.pdf",
+      verifyLink: `${BASE}/nvidia-deep-learning-cert.pdf`,
     },
     {
       title: "Java",
@@ -460,7 +462,7 @@ export default function Portfolio() {
                 <Mail size={18} /> Contact Me
               </a>
               <a
-                href="/resume.pdf"
+                href={`${BASE}/resume.pdf`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-medium hover:from-blue-700 hover:to-cyan-600 transition-all shadow-lg shadow-blue-500/20"
@@ -482,7 +484,7 @@ export default function Portfolio() {
               <div className="absolute -inset-4 rounded-full bg-gradient-to-br from-blue-500 via-cyan-500 to-blue-400 opacity-20 blur-xl animate-pulse" />
               <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-blue-500/50 shadow-2xl shadow-blue-500/25">
                 <Image
-                  src="/profile.png"
+                  src={`${BASE}/profile.png`}
                   alt="Manav Mule"
                   width={320}
                   height={320}
