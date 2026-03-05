@@ -447,6 +447,14 @@ export default function Portfolio() {
                 <Github size={18} /> GitHub
               </a>
               <a
+                href="https://leetcode.com/u/Manav_Mule/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#FFA116] text-black font-medium hover:bg-[#e89510] transition-colors"
+              >
+                <Code2 size={18} /> LeetCode
+              </a>
+              <a
                 href="https://www.linkedin.com/in/manav-mule-757758289/"
                 target="_blank"
                 rel="noopener noreferrer"
